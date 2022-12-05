@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<h1>name : {{snack.title}}</h1>
+<img src="{{snack.image}}" alt="{{snack.title}}" width="200px"/>
+<h4>purchaser: {{snack.purchaser}}</h4>
+<h4>description: {{snack.description}}</h4>
+
+<button>    <a href="{% url 'home' %}">back</a>    </button>
+
+{% endblock content%}  
+
